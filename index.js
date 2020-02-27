@@ -50,7 +50,7 @@ app.get('/', function (req, res) {
 
 app.post('/', function (req, res) {
     call_api(function(doneAPI){
-        // posted_stuff = req.body.stock_ticker;
+        ticker = req.body.stock_ticker;
         res.render('home', {
             stock: doneAPI,
         });
