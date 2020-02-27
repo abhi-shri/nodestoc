@@ -1,2 +1,19 @@
-<h1>This is handlebar demo</h1>
-<p>{{stuff}}</p>
+<div class="jumbotron">
+<h1 class="display-4"><h1 style="text-align: center;">{{stock.companyName}}  {{stock.symbol}}</h1></h1>
+<strong> Latest Price: $</strong>{{stock.latestPrice}}<br/>
+<strong> Latest Time: </strong>{{stock.latestTime}}<br/>
+<strong> Previous Close: $</strong>{{stock.previousClose}}<br/>
+<strong> Percent Change: </strong>{{stock.changePercent}}%<br/>
+<strong> Market Cap: </strong>{{stock.marketCap}}<br/>
+<strong> YTD Change: </strong>{{stock.ytdChange}}%<br/>
+<strong> Week 52 High: </strong>{{stock.week52High}}<br/>
+<strong> Week 52 Low: </strong>{{stock.week52Low}}<br/>
+  <hr class="my-4">
+<br/>
+
+
+
+
+{{!-- {{#each stock}}
+    {{@key}} | {{this}} <br/>
+{{/each}} --}}
